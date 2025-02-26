@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+    <style>
+        button{
+            background-color: #f05123;
+            padding: 9px 16px;
+            border-radius: 999px;
+            border: none;
+            margin-bottom:20px;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- <style>
+        ul{
+            display: none;
+        }
+        input:focus ~ ul{
+            display: block;
+        }
+    </style> -->
+</head>
+<br>
+
+<!-- VD về ID -->
+<!-- <h1 id="heading">HTML DOM</h1>  -->
+
+<!-- VD về Class -->
+<!-- <h1 class="header">HTML DOM2</h1> -->
+
+<!-- VD về Tag Name -->
+<!-- <p>HELLO WORLD!</p> -->
+
+
+<!-- VD về CSS selector -->
+<!-- <h1 class="heading2">HTML DOM3</h1>
+
+<div class="box">
+    <h2 class="heading3">Heading 2</h2>
+    <h2 class="heading3">Heading 2</h2>
+    <h2 class="heading3">Heading 2</h2>
+    <h2 class="heading3">Heading 2</h2>
+    <h2 class="heading3">Heading 2</h2>
+
+</div> -->
+
+<!--VD về HTML collection  -->
+<!-- <form action="" id="testForm"></form>
+<form action="" id="form-1"></form>
+<form action="" id="form-2"></form>
+
+
+<a href="" name="youtube" >My Youtube</a> -->
+
+
+
+<!-- Kiến thức mở rộng -->
+
+<!-- <div class="box1">
+    <ul>
+        <li>Javascript 1</li>
+        <li>PHP 1</li>
+    </ul>
+
+    <p>Test paragraph</p>
+</div>
+
+<div class="box2">
+    <ul>
+        <li>Javascript 2</li>
+        <li>PHP 2</li>
+    </ul>
+</div>   -->
+
+
+
+<!-- Dom Attributes -->
+<!-- 
+<h1 class="heading">
+
+    <span>Heading</span>
+    <span>text</span>
+
+<h1> -->
+    
+
+<!-- Class list property -->
+<!-- <div class="box box-2">
+    <h1>CLASS LIST</h1>
+</div>
+<div class="box box-2">
+    <h1>CLASS LIST</h1>
+</div>
+<div class="box box-2">
+    <h1>CLASS LIST</h1>
+</div>
+<div class="box box-2">
+    <h1>CLASS LIST</h1>
+</div>
+<div class="box box-2">
+    <h1>CLASS LIST</h1>
+</div> -->
+
+
+
+<!-- Bài tập thêm các item vào trong thẻ ul -->
+<!-- <ul class="courses-list">
+
+</ul> -->
+
+
+ 
+<!-- DOM events -->
+<!-- Attribute events -->
+<!-- <h1 onclick="console.log(this)" style="cursor: pointer;"> -->
+    <!-- Này là sự kiện nổi bọt -->
+    <!-- <span onclick="console.log(this)">DOM events</span> -->
+    <!-- <span>DOM events</span>  -->
+
+<!-- </h1> -->
+
+
+<!-- Assign event using the element node -->
+<!-- <h1 class="heading">DOM events 1</h1>
+<h1 class="heading">DOM events 2</h1>
+<h1 class="heading">DOM events 3</h1> -->
+
+
+<!-- Bài tập DOM event -->
+<!-- <button>Submit</button></br> -->
+
+
+<!-- DOM events example  -->
+
+<!-- <input type="text">
+<input type="checkbox">
+
+<select id="selectElement">
+    <option value="1">Javascript</option>
+    <option value="2">PHP</option>
+    <option value="3">Dart</option>
+</select></br> -->
+
+<!-- KeyboardEvent -->
+
+<!-- <input class="text" type="text"> -->
+
+<!-- </br> -->
+
+
+
+
+<!-- preventDefault -->
+
+<!-- <a href="https://f8.edu.vn">
+    Học lập trình
+</a>
+
+</br>
+
+<a href="https://google.com.vn">
+    Tìm kiếm
+</a> -->
+
+<!-- <input placeholder="Tim Kiem" />
+
+<ul>
+    <li>Javascript</li>
+    <li>PHP</li>
+    <li>Dart</li>
+</ul> -->
+
+
+<!-- stopPropagation -->
+<!-- <div>
+    DIV
+    <button>Click me!</button>
+</div>
+
+
+<button id="btn">Click me!</button> -->
+
+
+<!-- Bài tập thực hành -->
+ 
+ <!-- Truy cập và thay đổi nội dung của một phần tử -->
+<!-- <p id="text">Hello, world!</p>
+<button onclick="changeText()">Change Text</button>
+
+<script>
+    let originalText = true;
+
+    function changeText() {
+        let pElement = document.getElementById('text')
+
+        if(originalText){
+            pElement.innerHTML = 'Hello, DOM';
+        }    
+        else{
+            pElement.innerHTML = 'Hello, World';
+        }
+
+        originalText = !originalText; // Đổi trạng thái mỗi lần bấm 
+    }
+
+</script> -->
+
+
+<!-- Thay đổi thuộc tính của phần tử -->
+
+<!-- <img id="myImage" src="./image.img/ảnh1.jpg" alt="Image">
+<button>Change Image</button>
+
+<script>
+    let originalImg = true;
+
+
+    function changeImage() {
+        let imgElement = document.getElementById('myImage');
+        if(originalImg){
+            imgElement.src = './image.img/ảnh2.jpg';
+        }
+        else{
+            imgElement.src = './image.img/ảnh1.jpg';
+        }
+        originalImg = !originalImg;
+    }
+    document.querySelector('button').addEventListener('click', changeImage);
+</script> -->
+
+
+<!-- Thêm và xóa lớp CSS -->
+
+<!-- <div id="box" class="blue-box">Box</div>
+<button onclick="toggleClass()">Toggle Class</button>
+
+<style>
+    .blue-box { background-color: blue; color: white; padding: 20px; width: 100px;}
+    .red-box { background-color: red; }
+</style>
+
+<script>
+
+    function toggleClass() {
+        document.getElementById('box').classList.toggle('red-box');
+    }
+
+</script> -->
+
+
+<!-- Tạo các phần tử mới và xóa phần tử-->
+
+<!-- <ul id="list">
+
+</ul>
+
+<button class="add">Add Item</button>
+<button class="delete">Delete Item</button>
+
+<script>
+    let count = 0;
+    function addItem() {
+        count++;
+        let li = document.createElement('li');
+        li.innerHTML = 'Item ' + count;
+        document.getElementById('list').appendChild(li);
+    }
+    document.querySelector(' .add').addEventListener('click', addItem)
+
+    function deleteItem() {
+        let ul = document.getElementById('list');
+        if(ul.lastElementChild){
+            ul.removeChild(ul.lastElementChild);
+        }
+        count--;
+    }
+    document.querySelector('.delete').addEventListener('click', deleteItem);
+
+
+</script> -->
+
+<!-- <ul id="comment-block"></ul> -->
+
+<!-- <ul id="post-block"></ul> -->
+
+<!-- <ul id="courses-block"></ul> -->
+
+<!-- Bài tập quản lý khóa học -->
+<!-- <div>
+    <h2>Danh sách khóa học</h2>
+
+    <ul id="list-courses"></ul>
+</div> -->
+
+
+<!-- Này là form tạo -->
+<!-- <div>
+    <div>
+        <label>Name</label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label>Description</label>
+        <input type="text" name="description">
+    </div>
+    <div>
+        <input type="hidden" name="id">
+    </div>
+    <div>
+        <button id="create">Create</button>
+    </div>
+    <div>
+        <button id="edit" style="display: none">Edit</button>
+    </div>
+    
+</div> -->
+
+
+
+<script src="main.js"></script>
+<script src="main2.js"></script>
+<script type="module" src="main3.js"></script>
+</body>
+</html>
